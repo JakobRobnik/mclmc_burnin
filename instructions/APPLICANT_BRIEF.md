@@ -1,5 +1,20 @@
 # Applicant brief
 
+## Setup (first thing to do)
+
+Work inside the folder of your session. Use `python3` (3.12) and a virtual environment inside this folder; do not use conda or any other environment.
+
+```bash
+git clone https://github.com/JakobRobnik/mclmc_burnin.git repo/mclmc_burnin   # skip if repo/mclmc_burnin already exists
+cd repo/mclmc_burnin
+python3 -m venv ../venv && source ../venv/bin/activate
+pip install -r requirements.txt
+python -m pytest -q
+python -m evaluator.run_public examples/submission.py --problems banana --bootstrap 20
+```
+
+Keep your own notes, scripts and results under `work/`. Read `README.md` for the repository layout.
+
 ## Task
 
 For each problem you receive a numerical log-density (values and gradients only, never the function) of a vector `x` of dimension `d`.
