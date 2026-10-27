@@ -1,0 +1,92 @@
+{
+ "ill_conditioned_gaussian": {
+  "tune_steps": 16000,
+  "burn_in": 10667,
+  "n_base": 24630
+ },
+ "banana": {
+  "tune_steps": 2250,
+  "burn_in": 1501,
+  "n_base": 3554
+ },
+ "quartic": {
+  "tune_steps": 12800,
+  "burn_in": 8535,
+  "n_base": 24346
+ },
+ "eight_schools": {
+  "tune_steps": 1900,
+  "burn_in": 1267,
+  "n_base": 2516
+ },
+ "brownian_unknown_scales": {
+  "tune_steps": 1900,
+  "burn_in": 1267,
+  "n_base": 3130
+ },
+ "brownian_missing_middle": {
+  "tune_steps": 800,
+  "burn_in": 535,
+  "n_base": 1776
+ },
+ "stochastic_volatility_small": {
+  "tune_steps": 1500,
+  "burn_in": 1001,
+  "n_base": 3062
+ },
+ "log_gaussian_cox": {
+  "tune_steps": 2000,
+  "burn_in": 1335,
+  "n_base": 2330
+ },
+ "item_response": {
+  "tune_steps": 2500,
+  "burn_in": 1667,
+  "n_base": 3672
+ },
+ "stochastic_volatility": {
+  "tune_steps": 4000,
+  "burn_in": 2667,
+  "n_base": 4082
+ },
+ "german_credit_logistic": {
+  "tune_steps": 500,
+  "burn_in": 335,
+  "n_base": 1078
+ },
+ "german_credit_probit": {
+  "tune_steps": 500,
+  "burn_in": 335,
+  "n_base": 1008
+ },
+ "german_credit_sparse": {
+  "tune_steps": 3600,
+  "burn_in": 2401,
+  "n_base": 7520
+ },
+ "radon_indiana": {
+  "tune_steps": 10000,
+  "burn_in": 6667,
+  "n_base": 11610
+ },
+ "radon_minnesota": {
+  "tune_steps": 1600,
+  "burn_in": 1067,
+  "n_base": 4462
+ },
+ "radon_halfnormal_indiana": {
+  "tune_steps": 4000,
+  "burn_in": 2667,
+  "n_base": 11676
+ },
+ "phi4_L8_lam5.198": {
+  "tune_steps": 400,
+  "burn_in": 267,
+  "n_base": 1216
+ },
+ "phi4_L16_lam4.344": {
+  "tune_steps": 1200,
+  "burn_in": 801,
+  "n_base": 2236
+ }
+}

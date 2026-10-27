@@ -1,0 +1,19 @@
+{
+ "summary": "NUTS 16 chains x 20000 draws, target acceptance 0.99, ESS(x^2) min 88395, R-hat max 1.0001, reference error floor 1.1e-05",
+ "settings": {
+  "num_chains": 16,
+  "num_warmup": 2000,
+  "num_samples": 20000,
+  "target_acceptance_rate": 0.99
+ },
+ "ess_min": 88394.76215977059,
+ "rhat_max": 1.0000694116135458,
+ "divergent_fraction": 0.0,
+ "reference_error_floor": 1.1312887501100273e-05,
+ "source_file": "brownian_missing_middle_acc0.99.npz",
+ "compared_rates": [
+  "0.8",
+  "0.95",
+  "0.99"
+ ]
+}

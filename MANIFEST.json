@@ -1,0 +1,31 @@
+{
+ "protocol": "AOP (AGENTIC_OPTIMIZATION_PROTOCOL.md) + mclmc_tuning.md (revised 2026-10-27)",
+ "dependencies": {
+  "jax": "0.12.0.1",
+  "jaxlib": "0.12.0.1",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "blackjax": "1.7.1",
+  "tfp-nightly": "0.26.0.dev20261023",
+  "inference_gym": "0.0.6.dev0",
+  "dm-tree": "0.1.10"
+ },
+ "python": "3.12.3",
+ "platform": "macOS-26.6.2-arm64-arm-64bit",
+ "dtype": "float64",
+ "device": "CPU",
+ "settings": {
+  "chains_per_problem": 10,
+  "burn_in_cap": 20000,
+  "error_threshold": 0.01,
+  "aggregation": "mean over coordinates of normalized squared error of x^2; median over chains of the error curve, then first crossing",
+  "production_horizon": "min(floor(3 n_base), 500000), extended to min(floor(5 n_base), 500000) if the median curve has not crossed",
+  "baseline": "BlackJAX MCLMC tuning (phased adapter), tuning length chosen per problem; EEVPD 5e-4",
+  "production_state": "random unit momentum from the evaluator key, 1 gradient evaluation to build; 2 evaluations per transition",
+  "seed_schedule": "key = fold_in(key(seed), crc32(problem name)); split into init, burn-in and production keys; chain keys by split"
+ },
+ "applicants": 3,
+ "final_submissions_per_applicant": 1,
+ "delegation": "none",
+ "development": "independent until all candidates are frozen"
+}

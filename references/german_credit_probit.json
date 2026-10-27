@@ -1,0 +1,19 @@
+{
+ "summary": "NUTS 16 chains x 10000 draws, target acceptance 0.99, ESS(x^2) min 77713, R-hat max 1.0001, reference error floor 1.3e-05",
+ "settings": {
+  "num_chains": 16,
+  "num_warmup": 2000,
+  "num_samples": 10000,
+  "target_acceptance_rate": 0.99
+ },
+ "ess_min": 77712.61646915751,
+ "rhat_max": 1.0001117387674985,
+ "divergent_fraction": 0.0,
+ "reference_error_floor": 1.2867923452260532e-05,
+ "source_file": "german_credit_probit_acc0.99.npz",
+ "compared_rates": [
+  "0.8",
+  "0.95",
+  "0.99"
+ ]
+}

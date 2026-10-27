@@ -1,0 +1,19 @@
+{
+ "summary": "NUTS 16 chains x 100000 draws, target acceptance 0.99, ESS(x^2) min 235718, R-hat max 1.0000, reference error floor 4.2e-06",
+ "settings": {
+  "num_chains": 16,
+  "num_warmup": 2000,
+  "num_samples": 100000,
+  "target_acceptance_rate": 0.99
+ },
+ "ess_min": 235718.33536761568,
+ "rhat_max": 1.0000249770316185,
+ "divergent_fraction": 0.0,
+ "reference_error_floor": 4.242351357353874e-06,
+ "source_file": "quartic_acc0.99.npz",
+ "compared_rates": [
+  "0.8",
+  "0.95",
+  "0.99"
+ ]
+}
