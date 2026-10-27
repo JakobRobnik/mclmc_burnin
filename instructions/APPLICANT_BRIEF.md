@@ -8,7 +8,7 @@ Work inside the folder of your session. Use `python3` (3.12) and a virtual envir
 mkdir -p repo/mclmc_burnin && curl -sL https://github.com/JakobRobnik/mclmc_burnin/archive/refs/heads/main.tar.gz | tar xz --strip-components=1 -C repo/mclmc_burnin
 cd repo/mclmc_burnin
 python3 -m venv ../venv && source ../venv/bin/activate
-pip install -r requirements.txt
+pip install --no-cache-dir -r requirements.txt
 python -m pytest -q
 python -m evaluator.run_public examples/submission.py --problems banana --bootstrap 20
 ```
