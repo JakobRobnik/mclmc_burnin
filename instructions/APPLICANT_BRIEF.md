@@ -5,13 +5,15 @@
 Work inside the folder of your session. Use `python3` (3.12) and a virtual environment inside this folder; do not use conda or any other environment.
 
 ```bash
-git clone https://github.com/JakobRobnik/mclmc_burnin.git repo/mclmc_burnin   # skip if repo/mclmc_burnin already exists
+mkdir -p repo/mclmc_burnin && curl -sL https://github.com/JakobRobnik/mclmc_burnin/archive/refs/heads/main.tar.gz | tar xz --strip-components=1 -C repo/mclmc_burnin
 cd repo/mclmc_burnin
 python3 -m venv ../venv && source ../venv/bin/activate
 pip install -r requirements.txt
 python -m pytest -q
 python -m evaluator.run_public examples/submission.py --problems banana --bootstrap 20
 ```
+
+(`git` cannot write inside this sandbox, so the repository is downloaded as an archive, not cloned. Use `work/` for your own files; version your work by copying files.)
 
 Keep your own notes, scripts and results under `work/`. Read `README.md` for the repository layout.
 
